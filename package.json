@@ -1,0 +1,42 @@
+{
+  "name": "skybird-mart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx next dev",
+    "build": "npx prisma generate && npx next build",
+    "start": "npx next start",
+    "lint": "npx next lint",
+    "db@connect": "pscale connect skybird-mart",
+    "db@update": "npx prisma db push",
+    "db@monitor": "npx prisma studio",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "bcrypt": "^5.1.1",
+    "iron-session": "github:renchris/iron-session#v8-as-dependency",
+    "next": "^14.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "swr": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "13.5.6",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "prisma": "^5.5.2",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  }
+}
